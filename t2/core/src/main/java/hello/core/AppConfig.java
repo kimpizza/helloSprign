@@ -14,17 +14,24 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
+
+    //@Bean memberService > new MemoryMemberRepository();
+    //@Bean orderService >  new MemoryMemberRepository();
+    // 두 서비스를 호출하면 MemoryMemberRepository가 두번 생성되는데 이건 싱글톤패턴이 깨지는 것 아닌가요?
     @Bean
     public MemberService memberService(){
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
     @Bean
     public OrderService orderService(){
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
 
