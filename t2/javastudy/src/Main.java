@@ -2,7 +2,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Deque<Integer> deque = new LinkedList<>();
+        int a = 100 - 30 / 30;
 
+        System.out.println(a);
+        System.out.println(100 - 30 % 30 );
     }
 }
