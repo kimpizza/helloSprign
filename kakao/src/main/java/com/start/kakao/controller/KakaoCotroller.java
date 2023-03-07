@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Map;
@@ -42,7 +41,6 @@ public class KakaoCotroller{
             session.setAttribute("email", userInfo.get("email"));
             session.setAttribute("age_range", userInfo.get("age_range"));
         }
-
 
         //ci는 비즈니스 전환후 검수신청 -> 허락받아야 수집 가능
         return "index";
