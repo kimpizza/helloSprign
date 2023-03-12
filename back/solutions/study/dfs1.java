@@ -1,3 +1,5 @@
+package study;
+
 public class dfs1 {
     // 각 노드가 방문한 정보
     public static boolean[] visited = {false, false, false, false, false, false, false, false, false};

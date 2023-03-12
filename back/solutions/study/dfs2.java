@@ -1,3 +1,5 @@
+package study;
+
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -13,7 +15,7 @@ public class dfs2 {
                 {2, 6, 8},
                 {1, 7}};
 
-        //각 노드가 방문한 정보를 1차원 배열 자료형으로 표현
+        //각 노드가 방문한 정보를 1차원 배열 자료형으로 표현 > 9열이라 9개로
         boolean[] visited = {false, false, false, false, false, false, false, false, false};
 
         //정의된 DFS함수 호출
