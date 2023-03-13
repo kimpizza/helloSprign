@@ -32,7 +32,7 @@ public class test2178 {
 		visit[0][0] = true;
 		start(0,0);
 		System.out.println(map[N-1][M-1]);
-
+		sc.close();
 	}
 	
 	public static void start(int x, int y) {
