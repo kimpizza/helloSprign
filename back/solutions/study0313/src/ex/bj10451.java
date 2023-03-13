@@ -1,4 +1,4 @@
-package study2;
+package ex;
 
 import java.io.*;
 import java.util.*;
@@ -30,7 +30,7 @@ public class bj10451 {
 						if(visit[go]) {
 							cnt++;
 							break;
-						}
+						} //이전에 방문한적이 없다면 
 						visit[go] = true; 
 						go = arr[go];
 					}
