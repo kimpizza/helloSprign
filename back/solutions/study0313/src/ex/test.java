@@ -16,6 +16,7 @@ public class test {
 		for(int t = 0; t<T; t++) {
 			int num = Integer.parseInt(br.readLine());
 			int [] arr = new int[num+1];
+			
 			boolean [] visit = new boolean[num+1];
 			st = new StringTokenizer(br.readLine());
 			for(int i = 1; i<arr.length; i++) {
