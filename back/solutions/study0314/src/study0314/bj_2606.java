@@ -36,7 +36,7 @@ public class bj_2606 {
 		visit[i] = true;
 		cnt++;
 		for(int k = 1; k<=node; k++) {
-			if(arr[i][k] ==1 && !visit[k]) {
+			if(arr[i][k] == 1 && !visit[k]) {
 				dfs(k);
 			}
 		}
