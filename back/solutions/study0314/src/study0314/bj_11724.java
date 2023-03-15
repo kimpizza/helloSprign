@@ -36,6 +36,8 @@ public class bj_11724 {
 			}
 		}
 		System.out.println(cnt);
+		
+		br.close();
 	
 	}
 	public static void bfs(int start) {
