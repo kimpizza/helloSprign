@@ -54,6 +54,7 @@ public class bj_2178 {
 					continue;
 				}
 				q.add(new position1(nextX, nextY));
+				
 				arr[nextX][nextY] = arr[p.x][p.y]+1;
 
 				visit[nextX][nextY]=true;
