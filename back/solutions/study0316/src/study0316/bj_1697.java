@@ -1,36 +1,37 @@
-package study0315;
+package study0316;
 
-import java.io.*;
 import java.util.*;
-public class bj_1687 {
+import java.io.*;
+
+public class bj_1697 {
+	
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int n = Integer.parseInt(st.nextToken());
-		int k = Integer.parseInt(st.nextToken());
+		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
 		
-		if(n == k) {
+		if(N==K) {
 			System.out.println(0);
-			return;
 		}
-		
-		boolean [] visit = new boolean[100001];
-		visit[n] = true;
+		boolean[] visit = new boolean[100001];
+		visit[N] = true;
 		Queue<Integer> q = new LinkedList<>();
-		q.add(n);
+		q.add(N);
 		
 		int size = q.size();
 		int cnt = 0;
 		
-		while(true) {
+		while(N!=K) {
 			cnt++;
 			size = q.size();
 			
+
 			for(int i =0; i<size; i++) {
-				int x = q.remove();
+				int x = q.poll();
 				visit[x] = true;
-				if(x-1 == k || x +1 == k || x*2 == k) {
+				if(x-1 == K || x +1 == K || x*2 == K) {
 					System.out.println(cnt);
 					return;
 				}
@@ -51,5 +52,7 @@ public class bj_1687 {
 				}
 			}
 		}
+		
 	}
+
 }
