@@ -7,7 +7,7 @@ public class bj1931 {
 	/* 1. 첫번째 들어온 사람은 회의실을 무조건 사용 가능하다.
 	 * 2. 회의실 사용 시간이 겹치면 회의실을 사용할 수 없다. 
 	 * 3. 회의실 사용이가능하다면 별도의 공간에 그 정보를 저장해준다??
-	 * 4. 리스트 사용해볼까???
+	 * 4. 리스트 사용해볼까?
 	 * */
 	public static void main(String[] args) throws IOException{
 		
